@@ -92,4 +92,4 @@ npm run build
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software Developer Professional Certificate.
+Completed as part of the IBM Full-Stack Software Developer Professional.
