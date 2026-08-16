@@ -119,5 +119,6 @@ npm run build
 * Completed as part of the **IBM Full-Stack Software Developer Professional**.
 
 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
