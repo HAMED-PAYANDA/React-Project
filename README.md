@@ -5,10 +5,12 @@
 
 A lightweight, blazing-fast React application setup powered by Vite. This repository serves as a foundational starter template, utilizing Hot Module Replacement (HMR) and optimized linting for modern frontend development.
 
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![React](https://img.shields.io/badge/React-Frontend_UI-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![ESLint](https://img.shields.io/badge/ESLint-Code_Quality-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 
 </div>
 
@@ -31,6 +33,25 @@ It is currently configured with base ESLint rules to enforce code quality and pr
 * **🧹 Built-in Linting:** Integrated `eslint.config.js` to catch errors early and enforce clean JavaScript practices.
 * **🧩 Component Ready:** Standardized `src` directory containing `App.jsx` and `main.jsx` entry points.
 
+---
+
+## 🏗️ Application Architecture
+
+The following diagram illustrates how Vite processes the application during local development versus how it compiles for a production environment.
+
+```mermaid
+graph TD
+    subgraph Development Environment
+        A[Developer Edits Code] -->|Save File| B(Vite Dev Server)
+        B -->|Native ESM + HMR| C[Browser UI Updates Instantly]
+    end
+    
+    subgraph Production Build
+        D[npm run build] --> E(Vite / Rollup Bundler)
+        E -->|Minify & Optimize| F[Static Assets: HTML, CSS, JS]
+        F --> G[Deploy to Hosting Provider]
+    end
+```
 ---
 
 ## 🛠️ Core Tech Stack
@@ -60,24 +81,25 @@ React-Project/
 ├── package.json               # Project metadata and script commands
 └── README.md                  # Project documentation
 ```
+---
 
 ⚙️ Local Setup & Execution
 To run this React + Vite application locally on your machine:
 1. Clone the Repository
-```text
+```bash
 git clone [https://github.com/HAMED-PAYANDA/React-Project.git](https://github.com/HAMED-PAYANDA/React-Project.git)
 cd React-Project
 ```
 
 2. Install Dependencies
 Ensure you have Node.js installed, then install the required node modules:
-```text
+```bash
 npm install
 ```
 
 3. Run the Development Server
 Launch the Vite server with HMR:
-```text
+```bash
 npm run dev
 ```
 
@@ -85,11 +107,18 @@ The application will now be accessible in your web browser (typically at http://
 
 4. Build for Production
 To generate a highly optimized production build:
-```text
+```bash
 npm run build
 ```
+---
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software Developer Professional.
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
