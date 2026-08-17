@@ -77,18 +77,21 @@ graph TD
 ## 📁 Project Structure
 
 ```text
+## 📁 Project Structure
+
+```text
 React-Project/
-├── public/
-│   └── vite.svg               # Static public assets
-├── src/
-│   ├── assets/                # Dynamic application assets (images, icons)
-│   ├── App.jsx / App.css      # Root application component and specific styles
-│   └── main.jsx / index.css   # React DOM rendering entry point and global styles
-├── index.html                 # Main HTML template
-├── vite.config.js             # Vite build and plugin configuration
-├── eslint.config.js           # ESLint rules and settings
-├── package.json               # Project metadata and script commands
-└── README.md                  # Project documentation
+├── public/                    # Static public assets (e.g., vite.svg)
+├── src/                       # Application source code (components, styles, assets)
+├── .gitignore                 # Specifies intentionally untracked files for Git
+├── eslint.config.js           # ESLint rules and settings for code quality
+├── index.html                 # Main HTML template and app entry point
+├── LICENSE                    # MIT License file
+├── package-lock.json          # Deterministic dependency tree
+├── package.json               # Project metadata, dependencies, and script commands
+├── README.md                  # Project documentation
+├── screenshot1.png            # Visual proof: Vite + React local dev server
+└── vite.config.js             # Vite build and plugin configuration
 ```
 ---
 
