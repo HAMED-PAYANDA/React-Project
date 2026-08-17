@@ -40,7 +40,7 @@ It is currently configured with base ESLint rules to enforce code quality and pr
 **Vite + React Local Development Server**  
 *A snapshot of the application running successfully on the local Vite development server. It displays the default landing page, which features an interactive state-driven counter component and confirms that Hot Module Replacement (HMR) is active and ready for rapid UI iteration.*
 
-![Vite and React Local Dev Server](screenshot1_2.png)
+![Vite and React Local Dev Server](screenshot1.png)
 
 ---
 
